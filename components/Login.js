@@ -88,8 +88,8 @@ const Login = () => {
       alert("Please enter your email and password");
     } else {
       var data = new FormData();
-      data.append("username", "aikho_20");
-      data.append("password", "mr.aikho201996");
+      data.append("username", state.email);
+      data.append("password", state.password);
       data.append("request_token", requestToken);
 
       try {
